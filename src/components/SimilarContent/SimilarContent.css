@@ -1,0 +1,147 @@
+.similar-content-container {
+    margin-top: 15vw;
+}
+
+.similar-content-list-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.similar-content-list {
+    display: flex;
+    margin: 10px 0;
+    overflow-x: auto;
+    gap: 15px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.similar-content-list::-webkit-scrollbar {
+    display: none;
+}
+
+.similar-rating {
+    border-top-left-radius: 10px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.similar-content-card {
+    width: 500px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.similar-content-container {
+    position: relative;
+}
+
+.similar-content-img {
+    max-width: 20vw;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.similar-scroll-btn-left,
+.similar-scroll-btn-right {
+    display: flex;
+    cursor: pointer;
+    z-index: 20;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%);
+    padding: 20px 0
+}
+
+.similar-scroll-btn-left button,
+.similar-scroll-btn-right button {
+    background-color: transparent;
+    padding: 20px 8px;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    transition: 0.15s;
+}
+
+
+.similar-scroll-btn-left button:hover,
+.similar-scroll-btn-right button:hover {
+    background-color: rgba(169, 169, 169, 0.4);
+}
+
+.similar-scroll-btn-left {
+    left: -4vw;
+}
+
+.similar-scroll-btn-right {
+    right: -4vw;
+}
+
+@media(max-width: 768px) {
+    .similar-content-card {
+        width: 40vw;
+    }
+
+    .similar-content-img {
+        max-width: 30vw;
+    }
+
+    .similar-scroll-btn-left,
+    .similar-scroll-btn-right {
+        display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .similar-content-list {
+        gap: 10px;
+    }
+
+    .similar-content-card {
+        width: 40vw;
+    }
+
+    .similar-content-img {
+        max-width: 30vw;
+    }
+
+    .similar-scroll-btn-left,
+    .similar-scroll-btn-right {
+        display: none;
+    }
+
+    .similar-content-container {
+        margin-top: 10vw;
+    }
+}
+
+
+@media(max-width: 480px) {
+    .similar-content-container {
+        margin-top: 10vw;
+        margin-bottom: 30px;
+    }
+
+    .similar-content-card {
+        width: 35vw;
+    }
+
+    .similar-content-img {
+        max-width: 35vw;
+    }
+
+    .similar-scroll-btn-left,
+    .similar-scroll-btn-right {
+        display: none;
+    }
+}

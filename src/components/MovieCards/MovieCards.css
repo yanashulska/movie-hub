@@ -1,0 +1,287 @@
+.home-movie-cards {
+    margin: 10px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-movie-cards h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.home-card-list {
+    display: flex;
+    margin: 10px 0;
+    overflow-x: auto;
+    gap: 15px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.home-card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.home-card {
+    width: 300px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: auto;
+    text-decoration: none;
+    color: white;
+}
+
+.home-card-img-container {
+    display: inline-block;
+    position: relative;
+}
+
+.home-card-rating {
+    border-top-left-radius: 10px;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.home-card .home-card-img {
+    max-width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.add-watchlist {
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 4px;
+    display: flex;
+    align-items: center;
+    z-index: 15;
+    cursor: pointer;
+}
+
+
+
+.home-card p {
+    font-size: 0.9375rem;
+    text-align: center;
+}
+
+.left-btn,
+.right-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    top: 45%;
+    width: 15px;
+    transition: 0.20s;
+}
+
+.left-btn {
+    left: -15px;
+}
+
+.right-btn {
+    right: -15px;
+}
+
+.left-btn button,
+.right-btn button {
+
+    background: transparent;
+    color: white;
+    font-size: 1.875rem;
+    outline: none;
+    border: none;
+}
+
+.left-btn:hover,
+.right-btn:hover {
+    background: rgba(169, 169, 169, 0.4);
+}
+
+.scroll-buttons button {
+    background-color: rgba(205, 198, 198, 0.5);
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+.bi.bi-bookmark-fill {
+    width: 22px;
+    height: 22px;
+}
+
+.bi.bi-bookmark-heart {
+    width: 22px;
+    height: 22px;
+}
+
+.bi.bi-star-fill {
+    margin-right: 3px;
+}
+
+
+@media(min-width: 1439px) {
+    .home-card-img {
+        width: 25vw;
+    }
+
+    .bi.bi-bookmark-fill {
+        width: 22px;
+        height: 22px;
+    }
+
+    .bi.bi-bookmark-heart {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+
+@media(max-width: 1024px) {
+    .home-card-img {
+        width: 32vw;
+    }
+
+    .home-card p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .home-card-rating {
+        font-size: 1rem;
+    }
+
+    .home-movie-cards {
+        margin: 10px 15px;
+    }
+
+    .home-movie-cards h2 {
+        margin-top: 15px;
+        margin-bottom: 3px;
+    }
+
+    .home-card-list {
+        padding: 0 10px;
+    }
+
+    .home-card {
+        margin-bottom: 10px;
+    }
+
+    .home-card-img-container {
+        padding: 0 5px;
+    }
+}
+
+
+
+@media(max-width: 768px) {
+
+    .home-card p {
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    .home-card-rating {
+        font-size: 0.875rem;
+    }
+
+    .left-btn,
+    .right-btn {
+        display: none;
+    }
+
+    .home-card-rating {
+        font-size: 1rem;
+    }
+
+    .home-movie-cards {
+        margin: 10px 10px;
+    }
+
+    .home-movie-cards h2 {
+        font-size: 16px;
+
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .home-card-list {
+        padding: 0 5px;
+    }
+
+    .home-card {
+        margin-bottom: 5px;
+    }
+
+    .home-card-img-container {
+        padding: 0;
+    }
+
+    .bi.bi-bookmark-fill {
+        width: 20px;
+        height: 20px;
+    }
+
+    .bi.bi-bookmark-heart {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .home-card-img {
+        width: 35vw;
+    }
+
+    .home-card-rating {
+        font-size: 0.9375rem;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .home-movie-cards {
+        margin: 10px;
+    }
+
+    .home-card-img {
+        width: 40vw;
+        font-weight: 300;
+    }
+
+    .home-card p {
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    .home-movie-cards h2 {
+        margin-top: 0;
+    }
+}

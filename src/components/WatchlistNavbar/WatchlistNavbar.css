@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    height: 60px;
+    background: transparent;
+    position: fixed;
+    z-index: 100;
+    color: white;
+    padding-left: 5%;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #A40000;
+}
+
+.nav-dark {
+    background: #1c1b1b;
+}

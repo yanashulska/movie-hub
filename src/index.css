@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: 'Poppins';
+
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+
+html {
+  font-size: 16px;
+}
+
+
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+body {
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+
+p {
+  font-size: 1rem;
+
+}
+
+small {
+  font-size: 0.875rem;
+
+}
+
+button {
+  font-size: 1rem;
+
+}
+
+a {
+  font-size: 1rem;
+
+}

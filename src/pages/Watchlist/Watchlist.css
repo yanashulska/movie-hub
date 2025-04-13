@@ -1,0 +1,628 @@
+.watchlist-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12vw;
+    margin-bottom: 6vw;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+
+.watchlist-container {
+    border-top: 0.3px solid rgb(63, 63, 63);
+    padding: 20px;
+
+}
+
+.watchlist-items-count {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 5vw;
+    margin-top: 2vw;
+    font-size: 1.2rem;
+}
+
+
+
+.watchlist-items-added-all,
+.watchlist-items-added-movies,
+.watchlist-items-added-tv {
+    display: flex;
+    gap: 10px;
+}
+
+.watchlist-cards-container {
+    width: 90%;
+    margin: 0 6vw;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+}
+
+
+.watchlist-delete-btn {
+    display: flex;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.62);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.watchlist-card {
+    width: 15vw;
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.watchlist-fallback {
+    border: 1px solid rgb(59, 59, 59);
+    display: flex;
+    height: 22vw;
+    width: 15vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.watchlist-card-img-container {
+    width: 100%;
+    position: relative;
+
+}
+
+.watchlist-card-img {
+    width: 15vw;
+    border-radius: 8px;
+}
+
+.watchlist-card-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    padding-left: 3px;
+    border-left: 2px solid red;
+    background-color: rgba(53, 53, 53, 0.517);
+}
+
+.watchlist-rating {
+    display: flex;
+    font-size: 0.875rem;
+    margin-left: 10px;
+    justify-content: flex-end;
+}
+
+
+.watchlist-rating-btn {
+    background-color: #3c3c3c;
+    outline: none;
+    border: none;
+    color: white;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 600;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.watchlist-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    border-bottom: 0.5px solid #626262;
+}
+
+.watchlist-options-item {
+    cursor: pointer;
+}
+
+
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.watchlist-container {
+    padding: 10px;
+}
+
+
+.collection-container {
+    padding: 30px;
+}
+
+
+
+.collection-btn {
+    padding: 10px 15px;
+    background-color: #e70000;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.collection-btn:hover {
+    background-color: #a11111;
+
+}
+
+.collection-cancel-btn {
+    padding: 10px 15px;
+    background-color: #606060;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.collection-cancel-btn:hover {
+    background-color: #3e3e3e;
+}
+
+
+.modal-collection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 21, 21, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: hidden;
+
+}
+
+
+.modal-collection-container {
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    margin: 0 50px;
+    top: 5vw;
+    border-radius: 10px;
+    max-width: 70vw;
+    width: 100%;
+    max-height: 45vw;
+    overflow-y: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+.modal-collection input {
+    color: white;
+    width: 100%;
+    background-color: #414141;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+
+
+
+.collection-list-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-container-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.collection-movie-list-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    height: 60px;
+    background-color: #252525;
+}
+
+.movie-list {
+    display: grid;
+    justify-content: center;
+    overflow-x: hidden;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    row-gap: 3vw;
+
+
+}
+
+.movie-list div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.movie-list-modal-fallback-container {
+    border: 1px solid rgb(59, 59, 59);
+    display: flex;
+    height: 22vw;
+    width: 15vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.movie-checkbox {
+    display: none;
+
+}
+
+.movie-label {
+    position: relative;
+
+}
+
+.movie-image-container {
+    position: relative;
+    width: 14vw;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.movie-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.circle {
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s ease;
+
+
+}
+
+.circle.selected {
+    background-color: #d97f00;
+}
+
+.collection-movie-list-buttons-container {
+    position: sticky;
+    background-color: #252525;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+
+.collection-movie-list-cancel-btn {
+    background-color: #3c3c3c;
+}
+
+.collection-card {
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.collection-card-container {
+    position: relative;
+}
+
+.collection-delete-btn {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.collection-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.collection-movie-count {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.active-collection {
+    margin-top: 20px;
+}
+
+.active-collection-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+.active-collection-title-item {
+    display: flex;
+    align-items: center;
+}
+
+.close-collection-btn-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.active-collection-movies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    row-gap: 2%;
+    flex-wrap: wrap;
+    overflow: visible;
+    justify-content: center;
+}
+
+.active-collection-movies img {
+    width: 17vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.active-collection-movies img:hover {
+    transform: scale(1.1);
+}
+
+.watchlist-item-count {
+    margin-left: 5px;
+}
+
+.active-collection-fallback-container {
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 10px;
+    display: flex;
+    height: 10vw;
+    width: 7vw;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+
+.active-collection-fallback-title {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+@media(max-width: 1024px) {
+    .modal-collection-container {
+        top: 20vw;
+        max-width: 70vw;
+        max-height: 50vw;
+    }
+
+    .movie-image-container {
+        width: 15vw;
+    }
+
+
+
+
+}
+
+@media (max-width: 800px) {
+    .watchlist-card {
+        width: 18vw;
+    }
+
+    .watchlist-card-img {
+        width: 18vw;
+    }
+
+    .watchlist-fallback {
+        width: 18vw;
+        height: 28vw;
+    }
+
+    .watchlist-items-count {
+        margin-top: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    .active-collection-fallback-container {
+        height: 30vw;
+        width: 20vw;
+    }
+
+    .modal-collection-container {
+        top: 20vw;
+        max-width: 90vw;
+        max-height: 70vw;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .movie-image-container {
+        width: 19vw;
+    }
+
+    .active-collection-movies img {
+        height: 30vw;
+        width: 20vw;
+    }
+
+    .active-collection-movies {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .watchlist-title {
+        margin-top: 15vw;
+        margin-bottom: 8vw;
+    }
+
+    .watchlist-cards-container {
+        width: 100%;
+        margin: 0 1vw;
+    }
+
+    .watchlist-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .watchlist-fallback {
+        width: 29vw;
+        height: 39vw;
+    }
+
+
+    .watchlist-card {
+        width: 29vw;
+    }
+
+    .watchlist-card-img {
+        width: 29vw;
+    }
+
+    .watchlist-items-count {
+        margin-top: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    .movie-list {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .movie-image-container {
+        width: 24vw;
+    }
+
+    .collection-movie-list-title {
+        font-size: 1.2rem;
+    }
+
+    .movie-list-modal-fallback-container {
+        height: 26vw;
+        width: 18vw;
+    }
+
+    .active-collection-fallback-container {
+        height: 38vw;
+        width: 28vw;
+    }
+
+    .active-collection-movies img {
+        height: 38vw;
+        width: 28vw;
+    }
+
+    .active-collection-movies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .active-collection {
+        margin-left: 0;
+    }
+
+    .modal-collection-container {
+        top: 30vw;
+        max-height: 90vw;
+        max-width: 90vw;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

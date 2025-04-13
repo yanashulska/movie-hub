@@ -1,0 +1,198 @@
+.movie-banner {
+    position: relative;
+}
+
+.banner-img {
+    position: relative;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+
+}
+
+
+
+.movie-caption {
+    position: absolute;
+    bottom: 30%;
+    max-width: 300px;
+    margin-left: 80px;
+
+}
+
+.home-movie-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.release-date {
+    font-size: 1.2rem;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    color: #c9c6c6;
+}
+
+.description {
+    font-size: 1rem;
+    width: 40vw;
+
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+
+}
+
+.btn-container button {
+    padding: 10px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 0.9375rem;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-container .play-btn {
+    background: #dfdbdb;
+    display: flex;
+    align-items: center;
+    color: #222;
+}
+
+.play-btn img {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.play-btn:hover {
+    background: #c9c6c6;
+}
+
+.info-btn {
+    margin-left: 10px;
+    background: #5a5a5ab3;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.info-btn img {
+    width: 24px;
+    margin-right: 5px;
+}
+
+@media(max-width: 1024px) {
+
+
+    .movie-caption {
+        bottom: 40px;
+        margin-left: 8%;
+        margin-bottom: 5vw;
+    }
+
+    .description {
+        width: 50vw;
+    }
+
+
+}
+
+@media(max-width: 800px) {
+    .movie-caption {
+        bottom: 30px;
+        margin-left: 8%;
+        margin-bottom: 5vw;
+    }
+
+    .movie-caption h2 {
+        font-size: 28px;
+    }
+
+    .release-date {
+        font-size: 13px;
+        margin-bottom: 10px;
+
+    }
+
+    .home-movie-title {
+        font-size: 1.6rem;
+    }
+
+
+}
+
+@media(max-width: 748px) {
+    .description {
+        display: none;
+    }
+
+    .movie-caption {
+        bottom: 30px;
+        margin-left: 8%;
+        margin-bottom: 5vw;
+    }
+
+
+}
+
+@media(max-width: 600px) {
+
+    .movie-caption {
+
+        bottom: 30px;
+
+        margin-left: 8%;
+
+    }
+
+    .movie-caption h2 {
+        font-size: 24px;
+    }
+
+    .release-date {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .description {
+        display: none;
+
+
+    }
+
+    .btn-container button {
+        display: none;
+
+    }
+
+    .btn-container .play-btn {
+        display: none;
+    }
+
+    .home-movie-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .movie-caption {
+        margin-left: 8%;
+        margin-bottom: 5vw;
+
+    }
+
+    .movie-caption h2 {
+        font-size: 16px;
+    }
+
+    .release-date {
+        font-size: 14px;
+    }
+
+    .home-movie-title {
+        font-size: 1.4rem;
+    }
+}

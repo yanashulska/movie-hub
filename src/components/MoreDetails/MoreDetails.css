@@ -1,0 +1,49 @@
+.page-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0 8px;
+    margin-bottom: 30px;
+    border-left: 6px solid rgb(96, 95, 95);
+}
+
+.additional-info-container {
+    margin-top: 15vw;
+}
+
+.additional-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 6vw;
+    row-gap: 5vw;
+    font-size: 1rem;
+}
+
+.info-item-title {
+    color: rgb(133, 131, 131);
+    font-size: 1rem;
+}
+
+
+@media(max-width: 480px) {
+    .additional-info-container {
+        margin-top: 15vw;
+    }
+
+    .additional-info {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 3vw;
+    }
+
+    .page-title {
+        font-size: 1.2rem;
+    }
+
+    .info-item-title {
+        font-size: 1rem;
+    }
+
+    .info-items {
+        font-size: 0.875rem;
+    }
+}
