@@ -11,12 +11,10 @@
     justify-content: center;
     align-items: center;
     padding: 10px 30px;
-
     border-bottom: 1px solid rgb(104, 102, 102);
     margin: 80px 0 30px;
 
 }
-
 
 .search-input {
     width: 90vw;
@@ -27,9 +25,7 @@
     font-size: 24px;
     outline: none;
     padding: 10px 20px;
-
 }
-
 
 .clear-input-icon-container {
     background-color: rgba(57, 55, 55, 0.668);
@@ -43,12 +39,8 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-bottom: 20px;
-
     overflow-x: hidden;
     text-wrap: nowrap;
-
-
-
 }
 
 .history-item {
@@ -60,12 +52,11 @@
     cursor: pointer;
 }
 
-
-
 .search-results {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    justify-content: center;
     row-gap: 20px;
     column-gap: 5px;
     margin-top: 40px;
@@ -77,14 +68,11 @@
     text-decoration: none;
     color: white;
     position: relative;
-
-
 }
 
 
 .result-card-img-container {
     position: relative;
-
 }
 
 .search-rating {
@@ -102,9 +90,11 @@
 }
 
 .result-card-img {
-
     width: 18vw;
+    height: 27vw;
+    max-height: 500px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .result-card-fallback {
@@ -112,16 +102,15 @@
     display: flex;
     height: 27vw;
     width: 18vw;
+    max-height: 500px;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
-
 
 
 .result-card-title {
     font-size: 0.875rem;
-
-
 }
 
 .suggestions-container {
@@ -139,13 +128,11 @@
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     color: white;
     max-height: 300px;
-
     overflow-y: auto;
 }
 
 .suggestions-list li.highlighted {
     background-color: #3d3c3c;
-
     cursor: pointer;
 }
 
@@ -165,7 +152,6 @@
     padding: 10px;
     background-color: rgb(20, 20, 20);
     cursor: pointer;
-
 }
 
 .suggestions-list li:hover {
@@ -173,9 +159,11 @@
 }
 
 
-
-
 @media(max-width: 600px) {
+    .search {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
 
     .search-input {
         width: 80vw;
@@ -186,19 +174,20 @@
     }
 
     .result-card {
-        width: 25vw;
+        width: 29vw;
     }
 
     .result-card-fallback {
         border: 1px solid rgb(59, 59, 59);
         display: flex;
-        height: 37vw;
-        width: 25vw;
+        width: 29vw;
+        height: 40vw;
         justify-content: center;
         align-items: center;
     }
 
     .result-card-img {
-        width: 25vw;
+        width: 29vw;
+        height: 40vw;
     }
 }

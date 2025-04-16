@@ -1,8 +1,8 @@
-#MovieHub - React App
+# MovieHub - React App
 
 MovieHub is a simple movie tracking app built with React and Vite. It allows users to create a watchlist and manage collections. Data is stored in the browser's localStorage, so your information is preserved only on the current device. If you clear your browser data or switch devices, your watchlist and collections may be lost.
 
-#Features
+## Features
 Watchlist & Collections: Easily add movies to your watchlist and collections.
 
 Local Storage: All data is stored in your browser's localStorage, making it fast and offline-friendly.

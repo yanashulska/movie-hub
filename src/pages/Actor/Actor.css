@@ -49,7 +49,7 @@
 
 .actor-photos-container {
     width: 90%;
-    padding: 20px;
+    padding: 4%;
     display: flex;
     flex-direction: column;
     margin: 40px auto;
@@ -94,7 +94,7 @@
 
 .actor-movie-container {
     width: 90%;
-    padding: 20px;
+    padding: 4%;
     margin: 8vw auto;
 }
 
@@ -173,7 +173,7 @@
 
 .actor-credits-container {
     width: 90%;
-    padding: 20px;
+    padding: 4%;
     margin: 10vw auto;
     font-size: 0.875rem;
 }
@@ -345,17 +345,21 @@
     }
 
     .actor-photos-row-one {
-        height: 20vw;
-        width: 28vw;
+        height: 22vw;
+        width: 32vw;
     }
 
     .actor-photos-row-two {
-        height: 16vw;
-        width: 24vw;
+        height: 18vw;
+        width: 26vw;
 
     }
 
     .actor-credits-container {
         margin: 0;
+    }
+
+    .actor-credits-card {
+        width: 94vw;
     }
 }
