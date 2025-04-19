@@ -4,6 +4,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, browserLoca
 import background from '/background_banner.jpg'
 import './Login.css'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
 
@@ -89,7 +90,7 @@ const Login = () => {
                 <img src={background} alt="" />
             </div>
             <div className='container'>
-                <div className="icon">Movie<span>Hub</span></div>
+                <Link to={'/'} className="icon">Movie<span>Hub</span></Link>
 
                 <div className="login-form">
                     <h2>Sign <span>{isSignUp ? 'Up' : 'In'}</span>!</h2>
@@ -154,7 +155,7 @@ const Login = () => {
                                     onChange={handleCheckboxChange} />
                                 <label htmlFor="remember">Remember Me</label>
                             </div>
-                            <p>Need Help?</p>
+
                         </div>
                     </form>
                 </div>

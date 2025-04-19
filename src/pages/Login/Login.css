@@ -40,13 +40,13 @@
 }
 
 .icon {
+    text-decoration: none;
+    color: #fff;
     position: absolute;
     top: 15px;
     left: 20px;
     font-size: 22px;
     font-weight: 600;
-
-
 }
 
 .icon span {
@@ -83,8 +83,7 @@
     color: #fff;
     border: none;
     outline: none;
-    font-size: 14px;
-    /*background: #4A4747;*/
+    font-size: 16px;
     background: transparent;
     border: 1px solid #545252;
     border-radius: 3px;

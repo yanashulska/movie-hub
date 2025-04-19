@@ -71,8 +71,6 @@ const Watchlist = () => {
     }
     const handleDeleteCollection = (index) => {
 
-
-
         const updateCollections = collections.filter((_, i) => i !== index);
 
         setCollections(updateCollections);
@@ -128,15 +126,15 @@ const Watchlist = () => {
         setActiveSection(section)
     }
 
-
     const handleRatingSubmit = (movieId, rating) => {
         setRating((prevRatings) => {
-            const updatedRatings = { [movieId]: rating, ...prevRatings };
+            const updatedRatings = { ...prevRatings, [movieId]: rating };
             localStorage.setItem('movieRatings', JSON.stringify(updatedRatings));
             return updatedRatings;
         });
 
     }
+
 
 
     useEffect(() => {
@@ -145,7 +143,6 @@ const Watchlist = () => {
 
 
     const totalItems = watchlist.length;
-
 
     const getWatchlistCount = () => {
         let movieCount = 0;
@@ -167,7 +164,6 @@ const Watchlist = () => {
 
     const { movieCount, tvCount } = getWatchlistCount()
 
-
     const filteredWatchlist = watchlist.filter((item) => {
         if (filter === 'movie') {
             return item.original_title;
@@ -180,12 +176,10 @@ const Watchlist = () => {
         setFilter(type)
     }
 
-
     const openRatingModal = (movieId) => {
         setCurrentMovieId(movieId);
         setShowModal(true);
     };
-
 
     const closeRatingModal = () => {
         setShowModal(false);
@@ -193,9 +187,6 @@ const Watchlist = () => {
     };
 
     const handleDeleteWatchlistItem = (movieId) => {
-
-
-
         const updatedWatchlist = watchlist.filter(movie => movie.id !== movieId)
         setWatchlist(updatedWatchlist);
         localStorage.setItem('watchlist', JSON.stringify(updatedWatchlist))

@@ -9,10 +9,16 @@ const MovieRatingSlider = ({ movieId, onSubmitRating, onClose, watchlist }) => {
         if (movieId && watchlist.length > 0) {
             const selectedMovie = watchlist.find((item) => item.id === movieId);
             setMovie(selectedMovie);
+
+            const savedRatings = JSON.parse(localStorage.getItem("movieRatings")) || {};
+            if (savedRatings[movieId]) {
+                setRating(savedRatings[movieId])
+            } else {
+                setRating(0)
+            }
         }
 
     }, [movieId, watchlist]);
-
 
 
     const handleSliderChange = (e) => {
@@ -20,7 +26,9 @@ const MovieRatingSlider = ({ movieId, onSubmitRating, onClose, watchlist }) => {
     }
 
     const handleSubmit = () => {
-        onSubmitRating(movieId, rating)
+        if (onSubmitRating) {
+            onSubmitRating(movieId, rating)
+        }
         onClose()
     }
 
